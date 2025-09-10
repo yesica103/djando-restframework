@@ -20,7 +20,7 @@ class Insurance(models.Model):
 
 class MedicalRecord(models.Model):
     patient = models.ForeignKey(
-        Patient, related_name='medical_records', on_delete=models.CASCAD
+        Patient, related_name='medical_records', on_delete=models.CASCADE
         )
     date = models.DateField()
     diagnosis = models.TextField()

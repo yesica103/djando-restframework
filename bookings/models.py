@@ -18,8 +18,5 @@ class MedicalNote(models.Model):
     appointment = models.ForeignKey(
         Appointment, related_name='medical_notes', on_delete=models.CASCADE
         )
-    doctor = models.ForeignKey(
-        Doctor, related_name='medical_notes', on_delete=models.CASCADE
-        )
     note = models.TextField()
     date = models.DateTimeField()
