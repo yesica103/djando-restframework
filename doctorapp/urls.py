@@ -20,5 +20,6 @@ from django.urls import path, include
 from patients.views import list_patients
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('patients.urls'))
+    path('api/', include('patients.urls')),
+    path('api/', include('doctors.urls'))
 ]
