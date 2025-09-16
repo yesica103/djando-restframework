@@ -11,6 +11,8 @@ from rest_framework import status
 # PUT /api/patients/<pk> => Modificacion
 # DELETE /api/patients/<pk> => Borrar
 
+
+
 @api_view(['GET','POST'])
 def list_doctors(request):
     if request.method == 'GET':
